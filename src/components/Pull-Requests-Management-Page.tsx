@@ -1,5 +1,6 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 const App: React.FC = () => {
 const [prFilter, setPrFilter] = useState('open');
 const [searchQuery, setSearchQuery] = useState('');
@@ -280,11 +281,11 @@ className="w-full h-full object-cover"
 <div className="flex items-center space-x-4 text-sm">
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-code mr-2"></i>
-<span className="hover:text-white">Code</span>
+<Link to="/code" className="hover:text-white">Code</Link>
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-exclamation-circle mr-2"></i>
-<a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/1e656ebc-4a63-48f9-8e9c-6090d84d971b" data-readdy="true" className="hover:text-white">Issues</a>
+<Link to="/issues" className="hover:text-white">Issues</Link>
 </div>
 <div
 className="relative flex items-center px-3 py-1 border-b-2 border-[#f78166] text-white cursor-pointer group"
@@ -324,11 +325,11 @@ Review requests
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-play mr-2"></i>
-<a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/8f5eb93e-dbf8-4f8a-970e-647aeb6202cf" data-readdy="true" className="hover:text-white">Actions</a>
+<Link to="/actions" className="hover:text-white">Actions</Link>
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-chart-bar mr-2"></i>
-<a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/fb1b4df7-fbb3-42ec-99ff-00faf0b6c808" data-readdy="true" className="hover:text-white">Insights</a>
+<Link to="/insights" className="hover:text-white">Insights</Link>
 </div>
 </div>
 </div>

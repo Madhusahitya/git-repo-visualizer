@@ -1,5 +1,6 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import * as echarts from 'echarts';
 const App: React.FC = () => {
 const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -250,11 +251,11 @@ className="w-full h-full object-cover"
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-code mr-2"></i>
-<a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/5159d663-4c32-4d0f-8863-f8fbfe495637" data-readdy="true" className="hover:text-white">Code</a>
+<Link to="/code" className="hover:text-white">Code</Link>
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-exclamation-circle mr-2"></i>
-<a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/1e656ebc-4a63-48f9-8e9c-6090d84d971b" data-readdy="true" className="hover:text-white">Issues</a>
+<Link to="/issues" className="hover:text-white">Issues</Link>
 </div>
 <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
 <i className="fas fa-code-branch mr-2"></i>

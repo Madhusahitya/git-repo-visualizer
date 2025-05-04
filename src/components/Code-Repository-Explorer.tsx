@@ -1,6 +1,7 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const App: React.FC = () => {
   // State for file explorer
@@ -281,7 +282,7 @@ export default App;`;
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center px-3 py-1 hover:text-white cursor-pointer">
             <i className="fas fa-project-diagram mr-2"></i>
-            <a href="https://readdy.ai/home/84caaf0c-a0e2-47df-bf61-758434ccc1a1/8d7b9a3e-353f-4dfc-be95-a86cb31884ba" data-readdy="true" className="hover:text-white">Visualization</a>
+            <Link to="/visualization" className="hover:text-white">Visualization</Link>
           </div>
           <div className="flex items-center px-3 py-1 border-b-2 border-[#f78166] text-white cursor-pointer">
             <i className="fas fa-code mr-2"></i>
