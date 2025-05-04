@@ -206,18 +206,7 @@ default:
 return <i className="fas fa-code-branch text-[#238636]"></i>;
 }
 };
-const getStatusColor = (status: string) => {
-switch (status) {
-case 'open':
-return 'bg-[#238636]';
-case 'closed':
-return 'bg-[#da3633]';
-case 'merged':
-return 'bg-[#8957e5]';
-default:
-return 'bg-[#238636]';
-}
-};
+// Function removed to fix TS6133 error during build
 const getReviewStatusBadge = (status: string) => {
 switch (status) {
 case 'Approved':
